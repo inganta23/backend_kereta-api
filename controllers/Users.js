@@ -49,7 +49,7 @@ export const Login = async (req, res) => {
       { userId, name, email },
       process.env.ACCESS_TOKEN_SECRET,
       {
-        expiresIn: "20s",
+        expiresIn: "15s",
       }
     );
     const refreshToken = jwt.sign(
@@ -92,6 +92,7 @@ export const Logout = async (req, res) => {
           id: userId
       }
   });
+  res.clearCookie('accessToken');
   res.clearCookie('refreshToken');
   return res.sendStatus(200);
 };

@@ -27,3 +27,30 @@ GET http://localhost:5000/token
 
 ###
 DELETE http://localhost:5000/logout
+
+
+# Test Capstone
+# ### Register
+# POST http://ec2-34-212-169-254.us-west-2.compute.amazonaws.com/restapi/register
+# Content-Type: application/json
+
+# {
+#     "email": "john@gmail.com",
+#     "fullName": "John2",
+#     "password": "123456",
+#     "roles": [
+#         "user"
+#     ]
+# }
+
+# ###Login
+# POST http://ec2-34-212-169-254.us-west-2.compute.amazonaws.com/restapi/login
+# Content-Type: application/json
+
+# {
+#     "email": "john@gmail.com",
+#     "password": "123456"
+# }
+
+
+
